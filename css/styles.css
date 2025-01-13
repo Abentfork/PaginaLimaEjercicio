@@ -1,28 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
 
-html {
-    margin: 0px;
-    height: 100%;
-    width: 100%;
- }
+/* Pagina Principal  */
 body {
     border: #6B7D7D 20px solid;
-    margin: 0px;
-    min-height: 100%;
-    width: 100%;
+    margin: 0;
+    height: 200vw;
+    max-width: 100vw;
     font-family: Jura, Verdana, Geneva, Tahoma, sans-serif;
     background-image: url(/images/Background.jpg);
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
+    background-position: center;
 }
 .Titulo {
     background-color: #6B7D7D;
     position: absolute;
-    top: 0;
+    top: 0%;
     border-bottom-right-radius: 10px 10px;
+    padding-right: 1em;
+    height: 8%;
+
 
 }
 .Titulo > h1 {
     color: white;
 
+}
+
+.contenidoprincipal {
+    height: 20;
+    width: 80%;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    right: 10%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(107, 125, 125, 0.4);
+    border-radius: 10px 10px;
+    padding: 1em;
+}
+.contenidoprincipal h1 {
+    color: white;
+}
+.contenidoprincipal p {
+    color: white;
+    font-size: 18px;
+    justify-content: center;
+    text-shadow: 1px 1px 2px black;
+}
+.menu {
+    height: 8%;
+    width: 10em;
+    background-color: #6B7D7D;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    border-bottom-left-radius: 10px 10px;
 }
