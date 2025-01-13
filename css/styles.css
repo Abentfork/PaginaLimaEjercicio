@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+
+html {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+ }
+body {
+    border: #6B7D7D 20px solid;
+    margin: 0px;
+    min-height: 100%;
+    width: 100%;
+    font-family: Jura, Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(/images/Background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Titulo {
+    background-color: #6B7D7D;
+    position: absolute;
+    top: 0;
+    border-bottom-right-radius: 10px 10px;
+
+}
+.Titulo > h1 {
+    color: white;
+
+}
