@@ -2,12 +2,12 @@
 
 /* Pagina Principal  */
 body {
-    border: #6B7D7D 20px solid;
+    border: #A99985 20px solid;
     margin: 0;
-    height: 200vw;
+    height: 100%;
     max-width: 100vw;
     font-family: Jura, Verdana, Geneva, Tahoma, sans-serif;
-    background-image: url(/images/Background.jpg);
+    background-image: url(../images/Background.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -15,7 +15,7 @@ body {
     border-bottom: none;
 }
 .Titulo {
-    background-color: #6B7D7D;
+    background-color: #A99985;
     position: absolute;
     top: 0%;
     border-bottom-right-radius: 10px 10px;
@@ -32,15 +32,15 @@ body {
 .contenidoprincipalwho {
     width: 80%;
     position: relative;
-    top: 10%;
-    left: 10%;
-    right: 10%;
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: rgba(107, 125, 125, 0.4);
+    background-color: rgba(169, 153, 133, 0.8);
     border-radius: 10px 10px;
     padding: 1em;
+    margin: 0 auto;
+    margin-bottom: 5em;
+    margin-top: 5em;
 }
 .contenidoprincipalwho h1 {
     color: white;
@@ -54,7 +54,7 @@ body {
 .menu {
     height: 4em;
     width: 7em;
-    background-color: #6B7D7D;
+    background-color: #A99985;
     position: fixed;
     z-index: 1;
     right: 20px;
@@ -70,7 +70,7 @@ body {
     color: white;
 }
 .menu button {
-    background-color: #6B7D7D;
+    background-color: #A99985;
     border: none;
 }
 
@@ -82,32 +82,162 @@ body {
     text-shadow: 2px 2px 2px black;
 }
 .lastsong h1 {
-    background-color: #B9CDDA;
+    background-color: #DAD2BC;
     margin-left: 20%;
     margin-right: 20%;
     border-radius: 10px 10px;
     padding: 0.3em;
+    margin-top: 5em;
     
 }
 .lastsong iframe {
-    border: solid #6B7D7D 10px;
-    border-radius: 10px 10px;
+    width: 90%; /* Se ajusta automáticamente */
+    max-width: 800px;
+    height: auto;
+    aspect-ratio: 16 / 9; /* Relación de aspecto */
+    margin: 1em auto; /* Centrado */
+    display: block; /* Asegura el comportamiento en móvil */
 }
+/* Estilo base del menú */
+/* Estilo base del menú */
+.menu {
+    position: absolute;
+    top: 0;
+    right: 20px; /* Mueve el menú a la derecha de la pantalla */
+    background-color: #A99985;
+    border-radius: 10px;
+    border-bottom-right-radius: 0;
+    padding: 0.5em;
+}
+
+.menu button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.menu i {
+    font-size: 2em;
+    color: white;
+}
+
+/* La lista desplegable */
 .desplegable {
-    background-color: #6B7D7D;
-    height: 50vw;
-    display: none;
-    width: 20%;
-    top: 14%;
-    position: fixed;
-    right: 0;
-    z-index: 1;
-}
-.desplegable ul {
+    position: absolute;
+    top: 100%; /* Aparece debajo del botón */
+    right: 0; /* Alineado a la derecha del botón */
+    background-color: rgba(169, 153, 133, 0.9);
     list-style: none;
-    font-size: 18px;
+    margin: 0;
+    padding: 0.5em 0;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1;
+    min-width: 150px;
+}
+
+.desplegable li {
+    text-align: center;
+    margin: 0;
+}
+
+.desplegable li a {
+    display: block;
+    padding: 0.8em;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.desplegable li a:hover {
+    background-color: #DAD2BC;
+    color: black;
+}
+
+/* Mostrar el menú al pasar el mouse */
+.menu:hover .desplegable {
+    opacity: 1;
+    visibility: visible;
+}
+
+.footer {
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+    padding: 2em 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    gap: 2em;
+}
+
+.footer-links, .footer-socials, .footer-logo {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.footer-links h3, .footer-socials h3, .footer-logo h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    color: #dad2bc;
+}
+
+.footer-links ul {
+    list-style: none;
     padding: 0;
 }
-.menu button:hover > ul {
-    display: block;
+
+.footer-links li {
+    margin: 0.5em 0;
+}
+
+.footer-links a {
+    color: #f5f5f5;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #dad2bc;
+}
+
+.footer-socials .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.footer-socials .social-icons a {
+    color: #f5f5f5;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.footer-socials .social-icons a:hover {
+    color: #dad2bc;
+}
+
+.footer-logo p {
+    font-size: 0.9em;
+    color: #aaaaaa;
+    margin-top: 0.5em;
+}
+
+.links {
+    
 }
