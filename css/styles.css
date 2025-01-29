@@ -17,7 +17,7 @@ body {
 .Titulo {
     background-color: #A99985;
     position: absolute;
-    top: 0%;
+    top: 20px;
     border-bottom-right-radius: 10px 10px;
     padding-right: 1em;
     height: 4em;
@@ -91,19 +91,18 @@ body {
     
 }
 .lastsong iframe {
-    width: 90%; /* Se ajusta automáticamente */
+    width: 90%; 
     max-width: 800px;
     height: auto;
-    aspect-ratio: 16 / 9; /* Relación de aspecto */
-    margin: 1em auto; /* Centrado */
-    display: block; /* Asegura el comportamiento en móvil */
+    aspect-ratio: 16 / 9; 
+    margin: 1em auto; 
+    display: block; 
 }
-/* Estilo base del menú */
-/* Estilo base del menú */
+
 .menu {
     position: absolute;
     top: 0;
-    right: 20px; /* Mueve el menú a la derecha de la pantalla */
+    right: 20px; 
     background-color: #A99985;
     border-radius: 10px;
     border-bottom-right-radius: 0;
@@ -121,11 +120,11 @@ body {
     color: white;
 }
 
-/* La lista desplegable */
+
 .desplegable {
     position: absolute;
-    top: 100%; /* Aparece debajo del botón */
-    right: 0; /* Alineado a la derecha del botón */
+    top: 100%; 
+    right: 0; 
     background-color: rgba(169, 153, 133, 0.9);
     list-style: none;
     margin: 0;
@@ -158,7 +157,7 @@ body {
     color: black;
 }
 
-/* Mostrar el menú al pasar el mouse */
+
 .menu:hover .desplegable {
     opacity: 1;
     visibility: visible;
