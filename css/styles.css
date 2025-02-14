@@ -57,7 +57,6 @@ body {
     position: fixed;
     z-index: 1;
     right: 20px;
-    top: ;
     border-bottom-left-radius: 10px 10px;
     display: flex;
     align-items: center;
@@ -269,3 +268,123 @@ body {
     color: white;
     text-decoration: none;
 }
+
+/* pagina album*/
+
+.titulo {
+    color: white;
+    text-align: center;
+    margin-top: 2%; 
+}
+
+.album-content {
+    background-color: rgba(169, 153, 133, 0.8);
+    margin: 5% auto; 
+    max-width: 80%;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 10em;
+    padding-bottom: 1em;
+}
+
+.album-content h2 {
+    font-size: 2em;
+    color: white;
+    margin-bottom: 1.5em;
+}
+
+.album-content p {
+    font-size: 1.2em;
+    color: white;
+    margin-bottom: 2em;
+    line-height: 1.6;
+    text-shadow: 1px 1px 2px black;
+}
+
+.tracklist {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1em;
+    color: white;
+    margin-bottom: 3em;
+    text-shadow: 1px 1px 2px black;
+}
+
+.tracklist li {
+    margin: 0.5em 0;
+}
+
+.album-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-top: 2em;
+}
+
+.album-image {
+    margin: 2em auto;
+}
+
+.album-image img {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+.toggle-lyrics {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    text-decoration: underline;
+}
+
+.lyrics {
+    color: white;
+    font-size: 0.9em;
+    margin-top: 1em;
+    text-shadow: 1px 1px 2px black;
+}
+
+/* Estilos para el mapa de conciertos */
+.tour-content {
+    text-align: center;
+    margin: 40px 0;
+    margin-top: 10em;
+    background-color: #A99985 ;
+    padding-bottom: 5em;
+
+}
+
+.tour-content h2 {
+    font-size: 2.5em;
+    color: white;
+
+}
+
+.tour-content p {
+    font-size: 1.2em;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.map h3 {
+    font-size: 2em;
+    color: #A99985;
+    margin-bottom: 20px;
+}
+
+.map img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+/* Pagina concierto */
