@@ -17,7 +17,6 @@ body {
 .Titulo {
     background-color: #A99985;
     position: absolute;
-    top: 20px;
     border-bottom-right-radius: 10px 10px;
     padding-right: 1em;
     height: 4em;
@@ -58,7 +57,7 @@ body {
     position: fixed;
     z-index: 1;
     right: 20px;
-    top: 0;
+    top: ;
     border-bottom-left-radius: 10px 10px;
     display: flex;
     align-items: center;
